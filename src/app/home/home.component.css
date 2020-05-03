@@ -1,0 +1,50 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.header
+{
+    height: 400px;
+    width: 100%;
+    background-color: #3498DB;
+}
+h2,h5{
+    width: 100%;
+    text-align: center;
+    color: antiquewhite;
+    font-weight: bold;
+    font-style: italic;
+}
+.form,.cart
+{
+    margin-top: 100px;
+    width: 70%;
+    margin-left: 15%;
+    vertical-align: top;
+    
+}
+.list ul li{
+    display: inline-block;
+    width: 50%;
+    border: 1px solid black;
+    padding: 5px;
+    cursor: pointer;
+}
+.list ul li:hover{
+    background-color: #45CE30;
+}
+
+.cart ul li{
+    width: 100%;
+    border: 1px solid black;
+    padding: 5px;   
+    list-style: none;
+    vertical-align: top;
+
+}
+img{
+    height: auto;
+}
+.cart-inner
+{
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+}

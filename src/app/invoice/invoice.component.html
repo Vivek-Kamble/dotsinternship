@@ -1,0 +1,41 @@
+<div class="container mt-5 shadow p-3 mb-5 bg-white rounded">
+    
+    <form #invoice="ngForm">
+        <div style="width: 90%;margin-left: 5%;">
+            <h1 style="text-align: center;" class="bg-primary text-white"><b>Invoice</b></h1>
+            <ul style="font-size: 22px;">
+                <li>Name :  </li>
+                <li>Mobile Number : 94244XXXX</li>
+                <li>Address : Rathala,kalyani,West Bengal.</li>
+                <li>Total Amount : Rs <span id="final_invoice_price">297</span></li>
+              </ul>
+              <h1 style="text-align: center;" class="bg-primary text-white"><b>Payment Option</b></h1>
+              <div class="form-group">
+                <select class="form-control" #payment="ngModel" name="payment" ngModel>
+                  <option value="1" disabled selected>Choose your option</option>
+                  <option value="2">Credit card</option>
+                  <option value="3">upi</option>
+                  <option value="4">debit card</option>            
+                </select>
+              </div>
+              <div *ngIf="payment.value==2" class="form-group">
+                  <h4>Enter your Credit card details</h4>
+                  <input type="text" placeholder="Credit Card" class="form-control">
+              </div>
+              <div *ngIf="payment.value==3" class="form-group">
+                <h4>Enter your upi details</h4>
+                <input type="text" placeholder="upi" class="form-control">
+            </div>
+            <div *ngIf="payment.value==4" class="form-group">
+                <h4>Enter your debit card details</h4>
+                <input type="text" placeholder="Debit Card" class="form-control">
+            </div>
+            <button class="btn btn-primary">Make Payment</button>
+        </div>
+    </form>
+</div>
+
+
+<h1>vive 
+  {{val}}
+</h1>

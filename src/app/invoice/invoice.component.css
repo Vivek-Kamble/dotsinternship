@@ -1,0 +1,7 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.container
+{
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+}
